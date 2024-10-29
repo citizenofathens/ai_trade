@@ -1,0 +1,4 @@
+.env
+bitcoin_trades.db
+*.png
+trvenv/

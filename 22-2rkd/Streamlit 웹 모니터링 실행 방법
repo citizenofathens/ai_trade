@@ -1,0 +1,14 @@
+
+# 웹 대시보드 그냥 실행하기
+python3 -m streamlit -m run streamlit_app.py
+
+#백그라운드 실행 (웹 대시보드)
+nohup python3 -m streamlit run streamlit_app.py --server.port 8501 > streamlit.log 2>&1 &
+
+#실행 확인
+ps ax | grep .py
+
+#vim 에디터로 열기
+vim streamlit.log
+#로그 보기
+cat streamlit.log
