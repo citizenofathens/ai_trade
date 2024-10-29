@@ -7,6 +7,5 @@ ls -al
 # 실행하기
 python3 autotrade.py
 
-# 이미지 file.io로 보내기
-#gpt 4o vision에 보낼떄사용?
+# 이미지 file.io로 보내기(gpt 4o vision에 보낼떄사용?)
 curl -F "fil e=@/home/ubuntu/aibitcoin/파일명.png" https://file.io
