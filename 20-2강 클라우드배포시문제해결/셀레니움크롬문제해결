@@ -1,0 +1,30 @@
+# 필수 패키지 설치
+sudo apt install apt-transport-https ca-certificates curl software-properties-common wget unzip -y
+
+# Google Chrome 다운로드 및 설치 128.0.6613.113
+wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_128.0.6613.113-1_amd64.deb
+sudo dpkg -i google-chrome-stable_128.0.6613.113-1_amd64.deb
+sudo apt-get install -f
+google-chrome -version
+
+# 설치 완료 후 다운로드된 Google Chrome 설치 파일 삭제
+sudo rm google-chrome-stable_128.0.6613.113-1_amd64.deb
+
+# ChromeDriver 다운로드
+wget https://storage.googleapis.com/chrome-for-testing-public/128.0.6613.86/linux64/chromedriver-linux64.zip
+
+# ChromeDriver 압축 해제
+unzip chromedriver-linux64.zip
+
+# ChromeDriver를 /usr/bin/ 디렉토리로 이동
+sudo mv chromedriver-linux64/chromedriver /usr/bin/chromedriver
+
+# ChromeDriver 실행 권한 부여
+sudo chmod +x /usr/bin/chromedriver
+
+# ChromeDriver 버전 확인 128.0.6613.86
+chromedriver -version
+
+# 설치 완료 후 다운로드된 ChromeDriver 파일 및 압축 해제된 디렉토리 삭제
+sudo rm chromedriver-linux64.zip
+sudo rm -r chromedriver-linux64

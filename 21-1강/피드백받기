@@ -1,0 +1,7 @@
+21-1강 - 코드 정리 - 개발용 코드 제거 및 AI 3대장에게 피드백 받기
+사이트
+ChatGPT: https://chat.openai.com/
+Claude: https://claude.ai/
+Gemini: https://gemini.google.com/app
+
+pip install schedule

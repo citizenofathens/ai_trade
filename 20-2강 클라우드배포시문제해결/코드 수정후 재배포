@@ -1,0 +1,12 @@
+# 레포지토리 업데이트 가져오기
+git pull
+
+# 현재 경로 상세 출력
+ls -al
+
+# 실행하기
+python3 autotrade.py
+
+# 이미지 file.io로 보내기
+#gpt 4o vision에 보낼떄사용?
+curl -F "fil e=@/home/ubuntu/aibitcoin/파일명.png" https://file.io
